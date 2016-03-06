@@ -102,8 +102,8 @@ GEM
     method_source (0.8.2)
     mime-types (1.25.1)
     multi_json (1.11.2)
+    mysql2 (0.3.20)
     orm_adapter (0.5.0)
-    pg (0.18.4)
     polyamorous (0.5.0)
       activerecord (~> 3.0)
     polyglot (0.3.5)
@@ -192,16 +192,16 @@ PLATFORMS
 
 DEPENDENCIES
   activeadmin
-  coffee-rails (~> 3.2.1)
+  coffee-rails
   delayed_job_active_record
-  pg
+  mysql2 (~> 0.3.10)
   pry
   rails (= 3.2.22.2)
-  rspec-mocks (= 3.4.1)
-  rspec-rails (= 3.4.1)
-  sass-rails (~> 3.2.3)
-  test-unit (~> 3.0)
-  uglifier (>= 1.0.3)
+  rspec-mocks
+  rspec-rails
+  sass-rails
+  test-unit
+  uglifier
   unicorn
 
 BUNDLED WITH

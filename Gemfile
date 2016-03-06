@@ -1,32 +1,30 @@
 source 'https://rubygems.org'
 
-ruby '2.3.0'
-
 gem 'rails', '3.2.22.2'
 
-gem 'pg'
+gem 'mysql2', '~> 0.3.10'
 
 gem 'activeadmin'
 
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
-  gem 'coffee-rails', '~> 3.2.1'
+  gem 'sass-rails'
+  gem 'coffee-rails'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
 
-  gem 'uglifier', '>= 1.0.3'
+  gem 'uglifier'
 end
 
 group :development, :test do
   gem 'pry'
   # To use debugger
   # gem 'debugger'
-  gem 'rspec-rails', '3.4.1'
-  gem 'rspec-mocks', '3.4.1'
-  gem 'test-unit', '~> 3.0'
+  gem 'rspec-rails'
+  gem 'rspec-mocks'
+  gem 'test-unit'
 end
 
 gem 'delayed_job_active_record'
